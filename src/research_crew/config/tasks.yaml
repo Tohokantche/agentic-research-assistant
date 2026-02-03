@@ -1,0 +1,24 @@
+researcher_task:
+  description: >
+    Conduct a thorough online research about {topic} and {detailed_questions}. Make sure you find any interesting and relevant information given 
+    the current year is {current_year}. 
+  expected_output: >
+    A list of no more than 7 bullet points of the most relevant information on {topic} and {detailed_questions}. For 
+    each points, a clear and comprehensive explanation of the principles, concepts, disciplines, and skills needed by the visionary in order to 
+    achieve their goal. Back up each points with appropriate reference to internet articles titles and their URL, academic publications,
+    books name and authors.
+
+analyst_task:
+  description: >
+    Evaluate the report of the research agent. And, based on your analysis, create a learning plan, figure out the things the user 
+    needs to learn and focus on. Make sure the analysis is detailed and contains any and all relevant information.
+  expected_output: >
+    A thorough and concise learning plan about {detailed_questions}
+
+writer_task:
+  description: >
+    Given the analysis of the analyst agent, answer the users inquiry about {detailed_questions}.
+  expected_output: >
+    A fully fledged coherent report with the main principles and concepts, each with a comprehensive section of information. Provide 
+    at the end of the final report a list of references that you used. Formatted as markdown without '```'
+
