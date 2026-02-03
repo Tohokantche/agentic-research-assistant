@@ -4,10 +4,10 @@ A deep agentic research assistant built with CrewAI, Serper, and Streamlit that 
 
 ![Agentic  research assistant ](screenshot.png "")
 
-Link to the <a href="https://github.com/Tohokantche/agentic-research-crew">demo</a> of the application:
+Link to the <a href="https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/">demo</a> of the application:
 ```bash
 
-https://github.com/Tohokantche/agentic-research-crew
+https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/
 ```
 
 ## 🌟 Features
