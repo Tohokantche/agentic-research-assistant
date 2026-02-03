@@ -2,12 +2,13 @@
 
 A deep agentic research assistant built with CrewAI, Serper, and Streamlit that helps you research any topic.
 
-![Agentic  research assistant ](screenshot.png "")
+<video src="streamlit-streamlit_app-2026.webm" autoplay loop muted></video>
+
 
 Link to the <a href="https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/">demo</a> of the application:
 ```bash
 
-https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/
+https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/    streamlit-streamlit_app-2026.webm
 ```
 
 ## 🌟 Features
