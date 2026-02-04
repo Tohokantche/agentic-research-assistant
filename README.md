@@ -78,7 +78,7 @@ agentic-research-crew
 
 ## 📋 Requirements
 
-- Python >=3.10 and <3.13
+- Python ==3.11.9 
 - OpenAI API key or GROQ API key for LLMs
 - Serper API key for web search
 - Streamlit for UI
