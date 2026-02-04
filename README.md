@@ -4,7 +4,7 @@ A deep agentic research assistant built with CrewAI, Serper, and Streamlit that 
 
 ![Agentic  research assistant ](screenshot.png "")
 
-Link to the <a href="https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/">demo</a> of the application:
+Link to a <a href="https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/">live demo</a> of the application:
 ```bash
 
 https://agentic-research-crew-wgmesdsjqy2tsmjosxa3wm.streamlit.app/ 
