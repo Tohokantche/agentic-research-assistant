@@ -138,7 +138,7 @@ if start_research and proceed_condition:
         with memory_col2:
             shutil.make_archive('agent_memory', 'zip', storage_dir)
             with open('agent_memory.zip', 'rb') as f:
-                st.download_button('Download Agent Memory', 
+                st.download_button('Download Memory', 
                                    f, file_name='agent_memory.zip',
                                    help="Download the agent memory in zip format") 
      
