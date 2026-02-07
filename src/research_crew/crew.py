@@ -97,6 +97,6 @@ class ResearchCrewAgents:
             agents=[self.researcher_agent, self.analyst_agent, self.writer_agent],
             tasks=[self.researcher_task, self.analyst_task, self.writer_task],
             process=Process.sequential,
-            memory=True,
+            # memory=True,
             verbose=True
         )
