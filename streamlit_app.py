@@ -26,7 +26,7 @@ if 'task_count' not in st.session_state:
 
 # Define a callback function to run when the button is clicked
 def on_button_click():
-    if not topic or not detailed_questions:
+    if (not topic) or (not detailed_questions):
         st.error("Please fill all the fields.")
 
     if st.session_state.task_count >1:
