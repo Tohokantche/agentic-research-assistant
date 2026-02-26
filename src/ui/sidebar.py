@@ -84,6 +84,10 @@ def render_sidebar():
                         ollama_models,
                         help="Choose from your locally available Ollama models. For best results, use models known to handle function calling well (e.g., mixtral, openhermes)."
                     )
+            activate_mem = st.checkbox("Activate memory")
+            if activate_mem:
+                st.warning('This might slow down the agent response, as this demo run on free tier CPU cloud \
+                           with very limited ressources!', icon="⚠️")
         
         with st.expander("🔑 API Keys", expanded=False):
             #st.info("API keys are stored temporarily in memory and cleared when you close the browser.")
@@ -140,5 +144,6 @@ def render_sidebar():
             """)
     return {
         "provider": provider,
-        "model": model
+        "model": model,
+        "mem": activate_mem
     }
