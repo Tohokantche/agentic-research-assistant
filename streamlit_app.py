@@ -73,6 +73,7 @@ if selection["provider"] == "Ollama" and not selection["model"]:
 # Set provider and model name
 os.environ["PROVIDER"] = f"{selection['provider'].lower()}_llm"
 os.environ["MODEL_NAME"] =  f"{selection['provider'].lower()}/{selection['model']}"
+os.environ["USE_MEM"] =  f"{selection['mem']}"
 
 
 # Create two columns for the input section
