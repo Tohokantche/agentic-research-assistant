@@ -84,7 +84,7 @@ def render_sidebar():
                         ollama_models,
                         help="Choose from your locally available Ollama models. For best results, use models known to handle function calling well (e.g., mixtral, openhermes)."
                     )
-            activate_mem = st.checkbox("Activate memory")
+            activate_mem = st.checkbox("Use memory")
             if activate_mem:
                 st.warning('This might slow down the agent response, as this demo run on free tier CPU cloud \
                            with very limited ressources!', icon="⚠️")
