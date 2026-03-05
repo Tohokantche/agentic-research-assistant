@@ -68,7 +68,7 @@ os.environ["USE_MEM"] =  f"{selection['mem']}"
 
 # Define a callback function to run when the button is clicked
 def on_button_click():
-    if not (topic and detailed_questions):
+    if not (topic and st.session_state['detailed_questions_key']):
         st.error("Please fill all the fields.")
 
     if st.session_state.task_count >1:
