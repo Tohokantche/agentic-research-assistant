@@ -24,16 +24,6 @@ if 'completed_task' not in st.session_state:
 if 'task_count' not in st.session_state:
     st.session_state.task_count = 0
 
-# Define a callback function to run when the button is clicked
-def on_button_click():
-    if (not topic) or (not detailed_questions):
-        st.error("Please fill all the fields.")
-
-    if st.session_state.task_count >1:
-        st.error("Sorry! You can only perfrom two research.")
-
-def on_text_change():
-    st.session_state.completed_task = False
 
 
 #--------------------------------#
@@ -74,6 +64,18 @@ if selection["provider"] == "Ollama" and not selection["model"]:
 os.environ["PROVIDER"] = f"{selection['provider'].lower()}_llm"
 os.environ["MODEL_NAME"] =  f"{selection['provider'].lower()}/{selection['model']}"
 os.environ["USE_MEM"] =  f"{selection['mem']}"
+
+
+# Define a callback function to run when the button is clicked
+def on_button_click():
+    if not (topic and detailed_questions):
+        st.error("Please fill all the fields.")
+
+    if st.session_state.task_count >1:
+        st.error("Sorry! You can only perfrom two research.")
+
+def on_text_change():
+    st.session_state.completed_task = False
 
 
 # Create two columns for the input section
